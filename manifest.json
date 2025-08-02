@@ -27,5 +27,9 @@
       ],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "sidebar_action": {
+  "default_title": "Universal Ad Blocker",
+  "default_panel": "sidebar.html"
+}
 }

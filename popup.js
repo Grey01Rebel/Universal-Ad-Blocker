@@ -1,4 +1,5 @@
 const toggle = document.getElementById("toggle-blocker");
+const statusLabel = document.getElementById("status-label");
 
 chrome.storage.local.get("blockAdsEnabled", (data) => {
   toggle.checked = data.blockAdsEnabled ?? true;
