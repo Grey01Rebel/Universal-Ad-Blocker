@@ -2,6 +2,9 @@ const toggle = document.getElementById("toggle-blocker");
 
 chrome.storage.local.get("blockAdsEnabled", (data) => {
   toggle.checked = data.blockAdsEnabled ?? true;
+  const statusLabel = document.getElementById("status-label");
+statusLabel.textContent = toggle.checked ? "Ad Blocker is ON" : "Ad Blocker is OFF";
+statusLabel.style.color = toggle.checked ? "green" : "red";
 });
 
 toggle.addEventListener("change", async () => {
