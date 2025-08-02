@@ -47,3 +47,7 @@ toggle.addEventListener("change", async () => {
     });
   }
 });
+
+document.getElementById("open-sidebar").addEventListener("click", () => {
+  chrome.tabs.create({ url: chrome.runtime.getURL("sidebar.html") });
+});
