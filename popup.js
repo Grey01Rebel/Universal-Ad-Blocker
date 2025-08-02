@@ -11,6 +11,8 @@ toggle.addEventListener("change", async () => {
   const isEnabled = toggle.checked;
 
   chrome.storage.local.set({ blockAdsEnabled: isEnabled });
+  statusLabel.textContent = isEnabled ? "Ad Blocker is ON" : "Ad Blocker is OFF";
+  statusLabel.style.color = isEnabled ? "green" : "red";
 
   const rules = [
     {
