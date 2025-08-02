@@ -26,25 +26,70 @@ toggle.addEventListener("change", async () => {
 
   // Define the ad-blocking rules (each rule blocks a specific domain)
   const rules = [
-    {
-      id: 1,
-      priority: 1,
-      action: { type: "block" },
-      condition: {
-        urlFilter: "doubleclick.net",
-        resourceTypes: ["script", "image", "xmlhttprequest"]
-      }
-    },
-    {
-      id: 2,
-      priority: 1,
-      action: { type: "block" },
-      condition: {
-        urlFilter: "googlesyndication.com",
-        resourceTypes: ["script", "image", "xmlhttprequest"]
-      }
-    },
-  ];
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "doubleclick.net",
+      "resourceTypes": ["script", "image", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "googlesyndication.com",
+      "resourceTypes": ["script", "image", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "facebook.net",
+      "resourceTypes": ["script", "image", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "adnxs.com",
+      "resourceTypes": ["script", "image", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "criteo.com",
+      "resourceTypes": ["script", "image", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "taboola.com",
+      "resourceTypes": ["script", "image", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "outbrain.com",
+      "resourceTypes": ["script", "image", "xmlhttprequest"]
+    }
+  }
+];
 
   // If enabled, apply the rules; if disabled, remove them
   if (isEnabled) {
